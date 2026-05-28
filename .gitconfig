@@ -1,0 +1,43 @@
+[user]
+    name = Starlong
+    email = starlong.lu@gmail.com
+
+[core]
+    editor = code --wait
+    excludesfile = ~/.gitignore_global
+    autocrlf = input
+
+[init]
+	defaultBranch = main
+
+[pull]
+    rebase = true
+
+[push]
+    default = simple
+
+[alias]
+    # 状态和信息
+    st = status
+    s = status --short
+
+    # 分支操作
+    br = branch
+    co = checkout
+    cb = checkout -b
+
+    # 提交操作
+    ci = commit
+
+    # 日志操作
+    lg = log --oneline --graph --decorate --all
+    last = log -1 HEAD
+
+    # 撤销操作
+    unstage = reset HEAD --
+
+[color]
+    ui = auto
+
+[safe]
+	directory = *
