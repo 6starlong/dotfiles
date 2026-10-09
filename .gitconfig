@@ -8,7 +8,7 @@
     autocrlf = input
 
 [init]
-	defaultBranch = main
+    defaultBranch = main
 
 [pull]
     rebase = true
@@ -40,4 +40,10 @@
     ui = auto
 
 [safe]
-	directory = *
+    directory = *
+
+[windows]
+    appendAtomically = false
+
+[http]
+    sslBackend = openssl
